@@ -1,0 +1,153 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
+:root
+{
+    --main-color:#0aad0a;
+    --light-color:#f0f3f2;
+    --shadow: rgba(145,158,171,.2) 0px 2px 4px -1px,rgba(145,158,171,.14) 0px 4px 5px 0px,rgba(145,158,171,.12) 0px 1px 10px 0px;
+    --font-family:'Encode Sans Expanded', sans-serif;
+    --rating-color:#ffc908;
+}
+
+body{
+    font-family: var(--font-family) !important;
+}
+.rating-color
+{
+    color: var(--rating-color);
+}
+.cursor-pointer
+{
+    cursor: pointer;
+}
+a , a:hover{
+    color: black !important;
+    text-decoration: none !important;
+}
+.product:hover
+{
+    box-shadow: var(--shadow);
+    border: solid 1px var(--main-color);
+}
+.product .btn 
+{
+    transition: transform 1s , opacity 1s;
+    transform: translateY(100%);
+    opacity: 0;
+}
+.product:hover .btn 
+{
+    opacity: 1;
+    transform: translateY(0%);
+
+}
+.font-sm
+{
+    font-size: 14px;
+}
+
+.brdr-main{
+    border: 1px solid var(--main-color) !important;
+}
+.brdr-main-rl{
+    border: 1px solid var(--main-color) !important;
+    transition: all 1s;
+}
+.hoverrl .brdr-main-rl:hover{
+    border: 1px solid red !important;
+    transition: all 1s;
+
+}
+.btnn-hover .brdr-hover:hover {
+    border: 1px solid #f40606 !important;
+    transition: transform  all 2s !important ;
+}
+.text-main
+{
+    color: var(--main-color) !important;
+}
+.bg-main
+{
+    background-color: var(--main-color) !important;
+}
+.bg-main-light 
+{
+    background-color: var(--light-color) !important;
+}
+
+.network{
+    background-color: #fff;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99999;
+    box-shadow: var(--shadow);
+    padding: 20px;
+
+}
+.loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar ul li a{
+    color: #0aad0a !important;
+    font-size: 18px;
+}
+.navbar ul li a:hover{
+    color: brown !important;
+    font-weight: 500 !important;
+    text-decoration: underline !important;
+}
+
+.navbar ul li i{
+    font-size: 20px !important;
+    cursor: pointer;
+    margin-right: 15px !important;
+}
+.navbar ul li i:hover{
+    color: var(--main-color) !important;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+}
+
+.navbar ul li .span1{
+   color: brown !important;
+   border-radius: 10px;
+   border: 1px solid #000 !important;
+   text-align: center;
+}
+.navbar ul li .span1:hover{
+    color: red !important;
+   font-weight: 500 !important;
+   border: 1px solid red !important;
+ }
+
+ @media screen and (max-width:568px){
+    /*Start section 1*/
+    .navbar ul li .span1{
+        margin-top: 20px;
+     }
+}
+
+@media screen and (min-width:569px) and (max-width:768px){
+    
+    /*Start section 1*/
+    .navbar ul li .span1{
+        margin-top: 20px;
+     }
+}
+@media screen and (min-width:769px) and (max-width:992px){
+    
+    /*Start section 1*/
+    .navbar ul li .span1{
+        margin-top: 20px;
+     }
+}
